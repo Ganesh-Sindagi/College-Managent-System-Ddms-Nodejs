@@ -1,0 +1,140 @@
+<html>
+<head> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #000000;
+}
+
+.topnav a {
+  float: left;
+  color: #ddd;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #4CAF50;
+  color:dark grey;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color:dark grey;
+}
+body 
+	{
+  		background-image: url("/images/back.png");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+	}
+
+
+label
+	{
+    		display: inline-block;
+    		float: center;
+    		clear: center;
+   		width: 250px;
+    		text-align: center;
+          color:brown;
+		font-size: 14px;
+		font-family: "Lato", sans-serif;
+	}
+input[type=text], select 
+	{
+  		width: 50%;
+  		padding: 5px 5px;
+  		margin: 9px 0;
+  		display: inline-block;
+  		border: 2px solid #ccc;
+  		border-radius: 10px;
+  		box-sizing: border-box;
+		font-size: 14px; 
+		text-align: center;
+	}
+input[type=submit] 
+	{
+		width: 40%;
+  		background-color: brown;
+  		color: white;
+		align: center;
+  		margin: 9px 0;
+  		border: none;
+  		border-radius: 10px;
+  		cursor: pointer;
+		font-size: 14px; 
+		padding: 5px 5px;
+	}
+input[type=password], select 
+	{
+  		width: 50%;
+  		padding: 5px 5px;
+  		margin: 9px 0;
+  		display: inline-block;
+  		border: 2px solid #ccc;
+  		border-radius: 8px;
+  		box-sizing: border-box;
+		font-size: 14px; 
+		text-align: center;
+	}
+input[type=submit]:hover 
+	{
+  		background-color: brown;
+		align: center;
+	}
+q
+	{
+  		width: 400px;
+		margin: auto;
+  		border: 3px solid white;
+		position: fixed;
+  		bottom: 300;
+  		right: 550;
+		text-align:center;
+	}
+p
+{
+  color:white;
+  text-indent: 30px;
+  text-transform:uppercase;
+  margin-left:600;
+  margin-bottom:lem;
+}
+</style>
+</head>
+<body>
+<div class="topnav">
+      <a class="active" href="/signup">Sign Up</a>
+      <a href="#">Login</a>
+      
+<q style="padding-left:30px">
+  <form action="/login" method="post">
+    		
+    		<br>
+		<label for="user">Email</label>
+    		<input type="email" id="user" name="user" placeholder="Enter Email">
+		
+		<br>
+		<label for="pass">Password</label>
+    		<input type="password" id="pass" name="passn" placeholder="Enter Password">
+
+  		<br>
+		  <button type="submit" class="btn btn-success btn-lg">Login</button>
+
+
+	
+	</form>
+</q>
+
+</body>
+</html>

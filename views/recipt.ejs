@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipt</title>
+    <link rel="stylesheet" href="/css/recipts.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+<body>
+    <h1 class="rh">Recipts</h1>
+
+    <h1 class="sh">Details for <%= std[0].name %></h1>
+
+    <div class="card rcard">
+        <div class="card-body">
+            <div class="container">
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Student ID</th> 
+                        <th scope="col">Name</th>
+                        <th scope="col">USN</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row"><%= std[0].std_id %></th>
+                        <td><%= std[0].name %></td>
+                        <td><%= std[0].usn %></td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Department Name</th> 
+                        <th scope="col">Admission</th>
+                        <th scope="col">Amount</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row"><%= dep[0].dep_name %></th>
+                        <td><%= fee[0].admission %></td>
+                        <td><%= fee[0].amount %></td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+      </div>
+</body>
+</html>

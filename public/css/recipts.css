@@ -1,0 +1,22 @@
+body {
+    background-color: #70af85 !important;
+}
+
+.rh {
+    margin-top: 2rem;
+    margin-left: 42rem;
+    color: white;
+}
+
+.rcard {
+    margin-top: 5rem;
+    width: 60rem;
+    margin-left: 18rem;
+    box-shadow: 10px 10px 10px rgb(69, 94, 59);
+}
+
+.sh {
+    margin-top: 2rem;
+    margin-left: 38rem;
+    color: white;
+}

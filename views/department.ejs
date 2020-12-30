@@ -1,0 +1,142 @@
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 128, 0, 100);
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidebar a {
+  padding: 16px 16px 16px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+}
+
+.sidebar a:hover {
+  color: brown;
+}
+
+.main {
+  margin-left: 200px; /* Same as the width of the sidebar */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 30px 10px;
+  text-align: center;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+label
+	{
+    		display: inline-block;
+    		float: center;
+    		clear: left;
+   		width: 250px;
+
+    		text-align: center;
+          color:black;
+		font-size: 22px;
+		font-family: "Lato", sans-serif;
+	}
+
+input[type=text], select 
+	{
+  		width: 20%;
+  		padding: 8px 8px;
+  		margin: 35px 0;
+  		display: inline-block;
+  		border: 1px solid #ccc;
+  		border-radius: 8px;
+  		box-sizing: border-box;
+		font-size: 12px; 
+		text-align: center;
+	}
+
+input[type=submit] 
+	{
+		width: 20%;
+  		background-color: green ;
+  		color: white;
+		align: center;
+  		margin: 7px 0;
+  		border: none;
+  		border-radius: 8px;
+  		cursor: pointer;
+		font-size: 12px; 
+		padding: 5px 5px;
+	}
+
+
+
+input[type=submit]:hover 
+	{
+  		background-color: #45a049;
+		align: center;
+	}
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+  <a href="student details.html"><i class='fa fa-user'></i>Student Details</a>
+  <a href="department.html"><i class='fa fa-building'></i>Department</a>
+  <a href="fee.html"><i class='fa fa-money'></i>Fee</a>
+  <a href="staff.html"><i class="fa fa-money"></i>Staff</a>
+  <a href="home.html"><i class="fa fa-home"></i>Logout</a>
+</div>
+
+<div class="main">
+	<form action="/department" method="post">
+  <p>Please select the course:</p>
+  <input type="radio" id="CSE" name="course" value="CSE">
+  <label for="CSE">Computer Science Engineering</label><br><br>
+
+  <input type="radio" id="ISE" name="course" value="ISE">
+  <label for="ISE">Information Science Engineering</label><br><br>
+
+  <input type="radio" id="ECE" name="course" value="ECE">
+  <label for="ECE">Electronics and Communication Engineering</label><br><br>
+
+  <input type="radio" id="EEE" name="course" value="EEE">
+  <label for="EEE">Electricals and Electronics Engineering</label><br><br>
+
+  <input type="radio" id="ME" name="course" value="ME">
+  <label for="age2">Mechanical Engineering</label><br><br> 
+  
+		<input type="submit" value="Proceed">
+    <input type="hidden" name="user_id" value="<%= user_id %>">
+  	</form>
+   
+</body>
+</html> 
+
+</form>
+
+</body>
+</html>
+
+
+       
+
+
+
+
+	
